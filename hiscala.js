@@ -12,11 +12,10 @@
 var selector = hijs || 'code';
 
 var keywords = ('val var def if else for while break match case do new Nil null Unit Any '
-               +'class trait object module package import private public '
+               +'class trait object package import private public '
                +'return this self true false try throw catch typeOf instanceOf').split(' '),
-    special  = ('=> Option Map List Seq Set NaN Infinity '
-               +'map flatMap foreach '
-               +'Some None').split(' ');
+    special  = ('NaN '
+               +'extends this self').split(' ');
 
 // Syntax definition
 // The key becomes the class name of the <span>
