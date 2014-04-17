@@ -1,4 +1,4 @@
-hiscala
+hiscala v0.1
 =======
 
 > hiscala is a dead-simple syntax highlighter for Scala code on the browser.
