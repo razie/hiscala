@@ -27,9 +27,7 @@ If you would like to specify what gets highlighted, set the global `hijs` variab
 example
 -------
 
-Code extract from http-console, highlighted by `hijs`:
-
-![screenshot](http://dl.dropbox.com/u/251849/hijs-example.png)
+See this post for an example: http://www.racerkidz.com/wiki/Blog:Cool_Scala/Post:The_Option_monad_pattern_thing
 
 philosophy
 ----------
