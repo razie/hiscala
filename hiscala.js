@@ -2,24 +2,24 @@
 //
 // hijs - JavaScript Syntax Highlighter
 //
-// Copyright (c) 2014 Razvan Cojocaru, based on the great hijs.js from Alexis Sellier
-//
 // Copyright (c) 2010 Alexis Sellier
 //
 
 // All elements which match this will be syntax highlighted.
 var selector = hijs || 'code';
 
-var keywords = ('val var def if else for while break match case do new Nil null in with Unit Any '
-               +'class trait object module package import '
-               +'continue delete return this true false throw catch typeof with instanceof').split(' '),
-    special  = ('eval window document undefined NaN Infinity parseInt parseFloat '
-               +'encodeURI decodeURI encodeURIComponent decodeURIComponent').split(' ');
+var keywords = ('val var def if else for while break match case do new Nil null Unit Any '
+               +'class trait object module package import private public '
+               +'return this self true false try throw catch typeOf instanceOf').split(' '),
+    special  = ('=> Option Map List Seq Set NaN Infinity '
+               +'map flatMap foreach '
+               +'Some None').split(' ');
 
 // Syntax definition
 // The key becomes the class name of the <span>
 // around the matched block of code.
 var syntax = [
+  ['special', /(=>|<-)/g],
   ['comment', /(\/\*(?:[^*\n]|\*+[^\/*])*\*+\/)/g],
   ['comment', /(\/\/[^\n]*)/g],
   ['string' , /("(?:(?!")[^\\\n]|\\.)*"|'(?:(?!')[^\\\n]|\\.)*')/g],
@@ -28,7 +28,7 @@ var syntax = [
   ['number' , /\b([0-9]+(?:\.[0-9]+)?)\b/g],
   ['keyword', new(RegExp)('\\b(' + keywords.join('|') + ')\\b', 'g')],
   ['special', new(RegExp)('\\b(' + special.join('|') + ')\\b', 'g')]
-];
+]; 
 var nodes, table = {};
 
 if (/^[a-z]+$/.test(selector)) {
