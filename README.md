@@ -1,7 +1,9 @@
-hijs and hiscala
-====
+hiscala
+=======
 
-> hijs is a dead-simple syntax highlighter for JavaScript code on the browser.
+> hiscala is a dead-simple syntax highlighter for Scala code on the browser.
+
+Based on https://github.com/cloudhead/hijs
 
 By default, it highlights everything inside `<code>` blocks.
 
@@ -16,7 +18,7 @@ usage
 
 Put this at the end of your `<body>`:
 
-    <script src="hijs.js"></script>
+    <script src="hiscala.js"></script>
 
 If you would like to specify what gets highlighted, set the global `hijs` variable before you include the script:
 
