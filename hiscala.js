@@ -1,7 +1,10 @@
 (function (hijs) {
 //
-// hijs - JavaScript Syntax Highlighter
+// v. 0.1 hiscala - Scala Syntax Highlighter
 //
+// Copyright (c) 2014 Razvan Cojocaru, 
+// based on jijs from Alexis Sellier
+
 // Copyright (c) 2010 Alexis Sellier
 //
 
