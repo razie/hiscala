@@ -1,4 +1,4 @@
-hijs
+hijs and hiscala
 ====
 
 > hijs is a dead-simple syntax highlighter for JavaScript code on the browser.
