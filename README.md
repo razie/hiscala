@@ -20,6 +20,8 @@ Put this at the end of your `<body>`:
 
     <script src="hiscala.js"></script>
 
+It will format all the code inside `<code>` blocks all over the `<body>`.
+
 If you would like to specify what gets highlighted, set the global `hijs` variable before you include the script:
 
     window.hijs = '.highlight';
@@ -46,6 +48,14 @@ hijs wraps tokens in `<span>` tags. You can style them like so:
     code .class, code .special { color: blue }
     code .number               { color: pink }
     code .comment              { color: grey }
+
+Also, to change background of the entire block (i.e. dark vs light background) also set:
+
+    pre {
+      background-color: #191919;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
 
 more info
 ---------
